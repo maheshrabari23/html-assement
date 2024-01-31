@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  ---pre classes --- */
+
+.border-curv {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.red {
+    background-color: rgb(155, 25, 25);
+    color: white;
+    border-radius: 24px;
+    padding: 7px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/*   ---Header--- */
+header .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    padding: 10px 40px;
+}
+
+header .logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logos li {
+    list-style: none;
+}
+
+header .logos li a {
+    text-decoration: none;
+    color: white;
+    padding: 2px 12px;
+}
+
+
+
+/*  -----navbar----*/
+
+.home nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(252, 251, 251);
+    padding: 15px 60px;
+    position: relative;
+    z-index: 1;
+}
+
+nav div p {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.home nav::before {
+    content: "";
+    background-color: rgba(220, 219, 219, 0.21);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    left: 0;
+}
+
+.home nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home nav li {
+    list-style: none;
+}
+
+.home nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 2px 12px;
+}
+
+.home nav li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+
+/*   ---main---*/
+.home {
+    background: rgba(0, 0, 0, 0.5)url(Screenshot\ \(4\).png) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 560px;
+    width: 100%;
+}
+
+.home main .hero {
+    padding: 70px;
+    color: white;
+    text-align: left;
+    height: auto;
+    width: 50%;
+
+}
+
+.home main .hero h1,
+h3,
+p {
+    margin-bottom: 15px;
+}
+
+.home main .slid {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 50px 30px;
+    color: white;
+}
+
+.home main .slid .best {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+    gap: 30px;
+}
+
+.home main .slid .best .red-box {
+    background-color: rgb(155, 25, 25);
+    color: white;
+    padding: 20px 35px;
+    border: none;
+}
+
+.home main .slid .best .red-box span {
+    font-size: 25px;
+    padding-top: 5px;
+    color: rgb(210, 147, 11);
+}
+
+.home main .slid .best .red-box .uni {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(224, 189, 12);
+    margin: auto;
+}
+
+.home main .slid .best .red-box h2 {
+    padding: 10px 0;
+}
+
+.home main .slid .arrow {
+    margin: 60px 20px;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* ----- meetings page---- */
+
+.meeting h2 {
+    text-align: center;
+    color: white;
+    padding-top: 140px;
+    padding-bottom: 20px;
+}
+
+.meeting {
+    background-color: rgb(35, 34, 33);
+    padding: 0 15px;
+}
+
+.meeting .mtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.meeting .mtn .sidebar {
+    background-color: rgb(249, 247, 247);
+    color: black;
+    padding: 20px 30px;
+    margin: 0 10px;
+}
+
+.meeting .mtn .sidebar .red {
+    padding: 8px 22px;
+}
+
+.meeting .mtn .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+
+}
+
+.meeting .mtn .grid .gridbox .pic1 {
+    background: url(img4.jpg);
+    height: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.meeting .mtn .grid .pic2 {
+    background: url(img1.jpg);
+    height: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.meeting .mtn .grid .pic3 {
+    background-image: url(img3.jpg);
+    height: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.meeting .mtn .grid .pic4 {
+    background-image: url(img2.jpg);
+    height: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.meeting .mtn .grid .gridbox {
+    background-color: white;
+}
+
+.meeting .mtn .grid .gridbox .text {
+    padding: 20px;
+}
+
+/*   -----degree section---- */
+
+.degree {
+    background: rgba(0, 0, 0, 0.7)url(stnd.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: hue;
+    height: 460px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px, 100px, 100px 100px;
+    grid-template-rows: 100px, 100px, 100px 100px;
+    gap: 20px;
+    text-align: left;
+    justify-content: space-between;
+    padding: 30px 80px;
+}
+
+.degree .yellow {
+    background-color: rgb(220, 175, 24);
+    padding-bottom: 5px;
+
+}
+
+
+.degree .box1 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.degree .box2 {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+.degree .white-box {
+    grid-row: 1/3;
+    grid-column: 3/5;
+}
+
+.degree .trans {
+    background-color: rgba(162, 160, 160, 0.288);
+    color: white;
+    max-width: 450px;
+    padding: 15px;
+}
+
+.degree .white-box {
+    background-color: white;
+    color: black;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+/*  ----section courses---*/
+
+.courses h2 {
+    color: white;
+    padding: 20px 4px;
+}
+
+.courses p {
+    padding: 15px;
+}
+
+.courses .slider .books .yl {
+    padding-bottom: 15px;
+    color: rgb(220, 175, 24);
+
+}
+
+.courses #red {
+    margin-left: 50px;
+    color: rgb(200, 29, 29);
+}
+
+.courses {
+    background-color: rgb(35, 34, 33);
+}
+
+.courses .slider {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+
+}
+
+.courses .slider .div1 {
+    background: url(book1.jpg);
+    height: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.courses .slider .div2 {
+    background: url(book2.jpg);
+    height: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.courses .slider .div3 {
+    background-image: url(book3.jpg);
+    height: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.courses .slider .div4 {
+    background-image: url(book4.jpg);
+    height: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.courses .slider .books {
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+
+.courses .slider .arrow {
+    margin: 60px 20px;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+/*  --number section ---*/
+
+.info {
+    background: rgba(0, 0, 0, 0.7)url(grl2.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: hue;
+    height: 430px;
+    width: 100%;
+    gap: 20px;
+    color: white;
+    justify-content: space-between;
+    padding: 30px 80px;
+}
+
+.info .numbers {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.info .numbers .fact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: 100px;
+    gap: 15px;
+
+
+}
+
+.info .numbers embed {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.info .numbers .fact .big {
+    color: rgb(220, 175, 24);
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.info .numbers .fact .blur {
+    padding: 50px;
+    color: white;
+    background-color: rgba(189, 188, 188, 0.272);
+    border: none;
+}
+
+
+/* --- footer ----*/
+
+.form {
+    background: rgb(35, 34, 33);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 30px 50px;
+}
+
+.form form {
+    background-color: white;
+    color: black;
+    padding: 30px 80px;
+
+}
+
+.form form input {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.form form select {
+    padding: 5px 35px;
+    border-radius: 20px;
+    border: 2px solid black;
+
+}
+
+.form form textarea {
+    border-radius: 10px;
+    height: 70px;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+
+.form .contact {
+    background-color: rgb(180, 24, 24);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: space-between;
+
+}
+
+
+/*   --- reponsive--- */
+
+@media (max-width:576px) {
+    header .top {
+        display: none
+    }
+
+    .home nav .navbar {
+        display: none;
+    }
+
+    .home main .hero {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .home main .slid .best {
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px 0;
+    }
+
+    .home main .slid .arrow {
+        display: none;
+    }
+
+    .meeting {
+        margin-top: 500px;
+    }
+
+    .meeting .mtn {
+        flex-direction: column;
+
+    }
+
+    .courses {
+        padding-top: 180px;
+    }
+
+    .courses .slider .arrow {
+        display: none;
+    }
+
+    .courses .slider {
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px 10px;
+    }
+
+    .degree {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info .numbers {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form {
+        flex-direction: column;
+        padding-top: 220px;
+    }
+
+    .form form textarea {
+        margin-top: 10px;
+    }
+
+    .form .contact {
+        margin-top: 30px;
+    }
+}
+
+
+@media (min-width: 700px) {
+    header .top {
+        display: flex;
+    }
+}
+
+@media (max-width:992px) {}
